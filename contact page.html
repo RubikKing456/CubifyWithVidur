@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Page</title>
+  <link rel="website icon" type="jpg" href="img/CubifyLogo.jpg">
+  <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a { 
+    float: none;
+    display: block;
+  }
+}
+    .container {
+      width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 5px;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <style>
+    body {
+      background-image: url("img/Contact\ Page\ Background.jpg");
+      background-repeat: repeat;
+    }
+  </style> 
+  <nav>
+    <div class="navbar">
+      <a href="index.html"><i class="home"></i> Home</a> 
+      <a href="videos.html"><i class="videos"></i> Videos</a> 
+      <a href="resources.html"><i class="resources"></i> Resources</a> 
+      <a href="contact page.html"><i class="contact page"></i> Contact Page</a>
+      </div>
+  </nav>
+  <div class="container">
+    <h1>Contact Us</h1>
+    <form action="https://formspree.io/f/xzblbnez" method="POST">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
+
